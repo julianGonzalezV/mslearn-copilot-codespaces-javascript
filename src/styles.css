@@ -2,6 +2,8 @@
 * CSS file to hold styles that apply across the application
 */
 
+
+
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
 html,
@@ -12,6 +14,20 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+}
+
+/* add an amazing animation to the social icons */
+.socialIcon {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 4px 8px rgba(78, 86, 126, 0.3));
+}
+
+.socialIcon:active {
+  transform: scale(0.95);
 }
 
 div#main {
